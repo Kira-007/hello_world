@@ -12,7 +12,7 @@ pipeline{
     }
     stage("Run Container"){
       steps{
-        sh 'sudo docker -d -p80:80 --name test1 mydoc:1.0'
+        sh 'sudo docker run -d -p80:80 --name test1 mydoc:1.0'
       }
     }
   }
