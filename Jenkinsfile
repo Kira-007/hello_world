@@ -7,7 +7,7 @@ pipeline{
   stages{
     stage("Build"){
       steps{
-        sh 'sudo docker build -t mydoc:1.0'
+        sh 'sudo docker build -t mydoc:1.0 .'
       }
     }
     stage("Run Container"){
